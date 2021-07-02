@@ -40,10 +40,25 @@
 #
 
 noinst_LIBRARIES = libsec.a
-
 libsec_a_CPPFLAGS = \
 	-I$(top_srcdir)/src/include \
 	@KRB5_CFLAGS@
 
 libsec_a_SOURCES = \
-	cs_standard.c
+	cs_standard.c \
+	pbs_seccon.c
+
+#lib_LTLIBRARIES = libsec.la
+
+#libsec_la_LDFLAGS = -version-info 0:0:0 # \
+	#-lselinux\
+	#-lpam \
+	#-lpam_misc
+
+#libsec_la_CPPFLAGS = \
+#	-I$(top_srcdir)/src/include \
+#	-I /usr/include/
+
+#libsec_la_SOURCES = \
+#	cs_standard.c \
+#	pbs_seccon.c
