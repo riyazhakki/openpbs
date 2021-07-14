@@ -50,7 +50,7 @@ pbs_server_bin_CPPFLAGS = \
 	@libz_inc@ \
 	@PYTHON_INCLUDES@ \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 pbs_server_bin_LDADD = \
 	$(top_builddir)/src/lib/Libtpp/libtpp.a \
@@ -73,7 +73,7 @@ pbs_server_bin_LDADD = \
 	-lcrypto \
 	@KRB5_LIBS@ \
 	@libundolr_lib@ \
-	@mac_lib@
+	@sec_lib@
 
 pbs_server_bin_SOURCES = \
 	accounting.c \
@@ -151,7 +151,7 @@ pbs_comm_CPPFLAGS = \
 	-I$(top_srcdir)/src/include \
 	@libz_inc@ \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 pbs_comm_LDADD = \
 	$(top_builddir)/src/lib/Libtpp/libtpp.a \
@@ -164,6 +164,6 @@ pbs_comm_LDADD = \
 	@socket_lib@ \
 	@KRB5_LIBS@ \
 	@libundolr_lib@ \
-	@mac_lib@
+	@sec_lib@
 
 pbs_comm_SOURCES = pbs_comm.c

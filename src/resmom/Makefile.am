@@ -52,7 +52,7 @@ pbs_mom_CPPFLAGS = \
 	@libz_inc@ \
 	@PYTHON_INCLUDES@ \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 pbs_mom_LDADD = \
 	$(top_builddir)/src/lib/Libattr/libattr.a \
@@ -72,7 +72,7 @@ pbs_mom_LDADD = \
 	-lcrypto \
 	@KRB5_LIBS@ \
 	@libundolr_lib@ \
-	@mac_lib@
+	@sec_lib@
 
 pbs_mom_SOURCES = \
 	$(top_builddir)/src/lib/Libattr/job_attr_def.c \

@@ -90,7 +90,7 @@ dist_bin_SCRIPTS = \
 common_cflags = \
 	-I$(top_srcdir)/src/include \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 common_libs = \
 	$(top_builddir)/src/lib/Libpbs/.libs/libpbs.a \
@@ -100,7 +100,7 @@ common_libs = \
 	-lpthread \
 	@socket_lib@ \
 	@KRB5_LIBS@ \
-	@mac_lib@
+	@sec_lib@
 
 common_sources = \
 	$(top_srcdir)/src/lib/Libcmds/cmds_common.c

@@ -72,7 +72,7 @@ pbs_rmget_CPPFLAGS = \
 	-I$(top_srcdir)/src/include \
 	@libz_inc@ \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 pbs_rmget_LDADD = \
 	$(top_builddir)/src/lib/Libtpp/libtpp.a \
@@ -84,6 +84,6 @@ pbs_rmget_LDADD = \
 	-lpthread \
 	@libz_lib@ \
 	@KRB5_LIBS@ \
-	@mac_lib@
+	@sec_lib@
 
 pbs_rmget_SOURCES = pbs_rmget.c

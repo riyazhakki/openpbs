@@ -38,10 +38,10 @@
 
 AC_DEFUN([PBS_AC_WITH_LIBSEC],
 [
-    [mac_inc=""]
-    [mac_lib=""]
-    [mac_cflags=""]
-    AC_SUBST(mac_inc)
-    AC_SUBST(mac_lib)
-    AC_SUBST(mac_cflags)
+    [sec_inc=""]
+    [sec_lib=""]
+    [sec_cflags=""]
+    AC_SUBST(sec_inc)
+    AC_SUBST(sec_lib)
+    AC_SUBST(sec_cflags)
 ])

@@ -48,7 +48,7 @@ common_cflags = \
 	-pthread \
 	@PYTHON_INCLUDES@ \
 	@KRB5_CFLAGS@ \
-	@mac_cflags@
+	@sec_cflags@
 
 common_libs = \
 	$(builddir)/libpbs_sched.a \
@@ -64,7 +64,7 @@ common_libs = \
 	@libical_lib@ \
 	@KRB5_LIBS@ \
 	@libundolr_lib@ \
-	@mac_lib@
+	@sec_lib@
 
 libpbs_sched_a_CPPFLAGS = ${common_cflags}
 
